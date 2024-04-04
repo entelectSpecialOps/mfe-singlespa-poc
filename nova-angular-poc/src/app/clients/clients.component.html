@@ -1,0 +1,9 @@
+<h2>Clients:</h2>
+    <div *ngFor="let client of CLIENTS">
+    <button type="button">
+      <div class="name">{{client.name}}</div>
+      <div class="surname">{{client.surname}}</div>
+      <div class="idNumber">{{client.idNumber}}</div>
+      <div class="balance">{{client.balance | currency}}</div>
+    </button>
+  </div>

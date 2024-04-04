@@ -1,0 +1,7 @@
+<input type="text" (keydown.enter)="onEnter($any($event.target).value)">
+<h2>Country:</h2>
+<div class="capital">{{countryObject?.capital}}</div>
+<div class="currency">{{countryObject?.currency?.name}}</div>
+<div class="region">{{countryObject?.region}}</div>
+<div>{{country}}</div>
+<div>{{countryObject | json}}</div>

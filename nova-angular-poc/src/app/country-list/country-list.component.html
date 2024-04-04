@@ -1,0 +1,14 @@
+<mat-selection-list #countries [multiple]="false">
+@for (country of countryObjectList; track country) {
+    <mat-list-option [value]="country" (selectedChange)="onSelect(country)">{{country.name}}</mat-list-option>
+}
+</mat-selection-list>
+<p>
+Option selected: {{countries.selectedOptions.hasValue() ? (countries.selectedOptions.selected[0].value | json) : 'None'}}
+</p>
+  
+<h2>Selected EU Country:</h2>
+<div class="capital">{{selectedCountry?.capital}}</div>
+<div class="currency">{{selectedCountry?.currency?.name}}</div>
+<div class="region">{{selectedCountry?.region}}</div>
+<div>{{selectedCountry | json}}</div>

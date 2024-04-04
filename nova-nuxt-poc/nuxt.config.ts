@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   app: {
       head: {
          script: [
-             { type:"text/javascript",src:"http://localhost:8080/main.js"}
+             { type:"text/javascript",src:"http://localhost:8084/main.js"}
          ]
      }
     }
