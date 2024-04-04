@@ -1,12 +1,12 @@
-version: "3.9"
+version: '3.9'
 
 services:
   app:
-    container_name: angular-app
+    container_name: app-rx
     image: app
     build:
       context: .
       dockerfile: Dockerfile
     restart: always
     ports:
-      - "8081:8081"
+      - '8082:8082'
