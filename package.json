@@ -1,0 +1,19 @@
+{
+  "name": "nova-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install:deps": "npm install && npm --prefix ./nova-nuxt-poc install && npm --prefix ./nova-react-poc install",
+    "prepare": "husky install",
+    "build:host": "npm --prefix ./host run build",
+    "serve:host": "npm --prefix ./host run dev",
+    "build:remote": "npm --prefix ./remote run build",
+    "serve:remote": "npm --prefix ./remote run dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.0"
+  }
+}
