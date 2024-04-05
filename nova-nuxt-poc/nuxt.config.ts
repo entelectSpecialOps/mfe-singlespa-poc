@@ -1,12 +1,28 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     devtools: { enabled: true },
+    vue: {
+        compilerOptions: {
+            isCustomElement: (tag) => ['custom-greeting', 'country-list-provider', 'country-provider', 'clients-provider'].includes(tag),
+        },
+    },
+    modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
+    tailwindcss: {
+        cssPath: ['./assets/css/tailwind.css', { injectPosition: 0 }],
+        configPath: 'tailwind.config.js',
+        exposeConfig: false,
+        config: {},
+        viewer: true,
+    },
+    colorMode: {
+        classSuffix: ''
+    },
     app: {
         head: {
             script: [
-                { type: "text/javascript", src: "http://localhost:8081/main.js" },
                 { type: "text/javascript", src: "http://localhost:8082/js/main.94c60dfc.js" }
+                //{ type: "text/javascript", src: "http://localhost:8081/main.js" },
             ]
         }
-    }
+    },
 })

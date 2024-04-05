@@ -4,14 +4,30 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev -p 8080",
+    "dev": "nuxt dev -p 8083",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@prisma/client": "^5.12.1",
+    "@types/bcrypt": "^5.0.2",
+    "@vueuse/core": "^10.9.0",
+    "bcrypt": "^5.1.1",
+    "h3": "^1.11.1",
     "nuxt": "^3.11.1",
+    "uuid": "^9.0.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^3.3.3",
+    "@nuxtjs/tailwindcss": "^6.11.4",
+    "@types/uuid": "^9.0.8",
+    "prisma": "^5.12.1",
+    "typescript": "^5.4.4"
+  },
+  "prisma": {
+    "schema": "server/database/schema.prisma"
   }
 }
