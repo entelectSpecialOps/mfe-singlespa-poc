@@ -20,8 +20,8 @@ export default defineNuxtConfig({
     app: {
         head: {
             script: [
-                { type: "text/javascript", src: "http://localhost:8082/js/main.94c60dfc.js" }
-                //{ type: "text/javascript", src: "http://localhost:8081/main.js" },
+                { type: "text/javascript", src: "http://localhost:8082/js/main.94c60dfc.js" },
+                { type: "text/javascript", src: "http://localhost:8081/main.js" },
             ]
         }
     },

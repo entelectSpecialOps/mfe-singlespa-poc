@@ -65,9 +65,10 @@ class GreetingWebComponent extends HTMLElement {
 
         shadow.appendChild(mountPoint);
 
-        const name = this.getAttribute("name") ?? "World";
+        const name = this.getAttribute("name") ?? "";
+        const token = this.getAttribute("token") ?? "";
         const root = ReactDOM.createRoot(mountPoint);
-        root.render(<Greeting name={name} />);
+        root.render(<Greeting token={token} name={name} />);
     }
 }
 
