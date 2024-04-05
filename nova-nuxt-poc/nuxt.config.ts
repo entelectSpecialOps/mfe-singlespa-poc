@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     devtools: { enabled: true },
+    experimental: {appManifest: false},
     vue: {
         compilerOptions: {
             isCustomElement: (tag) => ['custom-greeting', 'country-list-provider', 'country-provider', 'clients-provider'].includes(tag),
@@ -20,7 +21,7 @@ export default defineNuxtConfig({
     app: {
         head: {
             script: [
-                { type: "text/javascript", src: "http://localhost:8082/js/main.94c60dfc.js" },
+                { type: "text/javascript", src: "http://localhost:8082/js/main.f269f504.js" },
                 { type: "text/javascript", src: "http://localhost:8081/main.js" },
             ]
         }

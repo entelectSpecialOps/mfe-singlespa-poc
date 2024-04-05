@@ -1,31 +1,3 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// import './index.css';
-// import App from './App';
-// import reportWebVitals from './reportWebVitals';
-// import HeaderAndImage from "./titledImages/headerAndImage";
-//
-// class ImagesWithText extends HTMLElement{
-//     connectedCallback(){
-//         this.render();
-//     }
-//
-//
-//
-//     disconnectedCallback(){
-//         ReactDOM.unmountComponentAtNode(this);
-//     }
-//
-//     render(){
-//         ReactDOM.render(<HeaderAndImage />, this);
-//     }
-// }
-//
-// window.customElements.define('images-with-text', ImagesWithText);
-
-
-
-
 import ReactDOM from "react-dom/client";
 
 const Greeting: React.FC<{ name: string }> = (props) => {
@@ -53,7 +25,7 @@ class GreetingWebComponent extends HTMLElement {
         // Option 2: Link Stylesheet -----------------
         const link = document.createElement("link");
         link.setAttribute("rel", "stylesheet");
-        link.setAttribute("href", "/path/to/your/styles.css");
+        // link.setAttribute("href", "/path/to/your/styles.css");
 
         let x = 1;
         x++;
